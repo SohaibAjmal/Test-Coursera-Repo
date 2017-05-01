@@ -1,0 +1,7 @@
+<ol>
+<li ng-repeat = "item in narrowDownController.found">
+  {{ item.name }}
+  <button ng-click="narrowDownController.onRemove({index: $index});">Remove Item</button>
+</li>
+</ol>
+<div class="error" ng-if="narrowDownController.checkListEmpty()">Nothing!</div>
