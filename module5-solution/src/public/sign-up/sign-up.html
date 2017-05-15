@@ -1,6 +1,6 @@
 <div class="container">
 <!-- ng-controller="SignUpController as signUp" -->
-  <h1>Sign Up Form</h1>
+  <h2>Sign Up Form - Please Keep Writing If Text Not Visible, or Copy Paste Values</h2>
 
   <fieldset>
     <legend>Sign Up</legend>
@@ -12,10 +12,7 @@
         minlength="2"
         ng-maxlength="20">
 
-        <span
-          ng-if="(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched">
-          First Name must be at least 2 characters long
-        </span>
+
         <span ng-if="regForm.firstName.$error.maxlength && regForm.firstName.$touched">
           First Name must not be longer than 20 characters
         </span>
