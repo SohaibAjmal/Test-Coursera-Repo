@@ -1,0 +1,74 @@
+
+
+<div class="container" ng-show = "info.userInfo">
+  <h1>Your Info</h1>
+
+  <fieldset>
+    <legend>Your Info</legend>
+
+
+    <div id="name" >
+    Fiest Name :   {{ info.userInfo.firstName }} <br>
+    </div>
+
+    <div id="name" >
+    Last Name :   {{ info.userInfo.lastName }} <br>
+    </div>
+
+    <div id="name" >
+    Phone :   {{ info.userInfo.phone }} <br>
+    </div>
+
+    <div id="name" >
+    Email :   {{ info.userInfo.email }} <br>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="name" >
+    Menu Item Name :   {{ info.userInfo.name }} <br>
+    </div>
+
+    <div id="description" >
+    Description :   {{ info.userInfo.description }} <br>
+    </div>
+
+    <div id="price_small" >
+    Price for small:   {{ info.userInfo.price_small }} <br>
+    </div>
+
+    <div id="price_large" >
+    Price for large :   {{ info.userInfo.price_large }} <br>
+    </div>
+
+    <div id="small_portion_name" >
+    Small portion size :  {{ info.userInfo.small_portion_name }} <br>
+    </div>
+
+    <div id="large_portion_name" >
+    Large portion size : {{ info.userInfo.large_portion_name }} <br>
+    </div>
+
+
+    <br>
+
+    <br>
+
+    <div id="item_image" >
+    <img class="img-responsive" width="250" height="150" ng-src="images/menu/{{info.userInfo.shortName}}/{{info.userInfo.shortName}}.jpg"><br>
+    </div>
+
+  </fieldset>
+
+
+</div>
+
+
+<div class="container" ng-hide = "info.userInfo">
+
+  <h2>Not Signed Up Yet. Sign up Now!</h2>
+
+  <a ui-sref="public.signUp">
+    <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Sign Up</a>
+</div>

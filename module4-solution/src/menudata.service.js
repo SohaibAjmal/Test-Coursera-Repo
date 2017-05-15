@@ -25,15 +25,11 @@ function MenuDataService($http) {
 
       for (var i = 0; i < menuList.length ; i++)
       {
-
         var name = menuList[i];
-
         categories.push(name);
-
       }
 
       return categories;
-
 
     })
     .catch(function (errorResponse) {
